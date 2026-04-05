@@ -3,22 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes">
-  <title>Revístete | Moda circular, donación de ropa y cambio sostenible</title>
-  <meta name="description" content="Revístete es la plataforma líder en economía circular textil. Dona, vende o reutiliza ropa. Impacto social y ambiental real. Únete al cambio.">
-  <meta name="keywords" content="donar ropa, reutilizar ropa, moda sostenible, economía circular, ropa de segunda mano, donación textil, revístete, plataforma sostenible">
+  
+  <!-- Título optimizado SEO (60 caracteres máximo) -->
+  <title>Revístete | Moda circular sostenible - Dona y reutiliza ropa</title>
+  
+  <!-- Meta descripción atractiva (150-160 caracteres) -->
+  <meta name="description" content="Revístete: plataforma líder en economía circular textil. Dona, vende o reutiliza ropa. Impacto social real. Únete al cambio sostenible ♻️">
+  
+  <!-- Meta keywords (relevantes pero no sobrecargar) -->
+  <meta name="keywords" content="donar ropa, reutilizar ropa, moda sostenible, economía circular, ropa de segunda mano, donación textil, revístete, plataforma sostenible, ropa usada, reciclaje textil">
+  
+  <!-- Autor y robots -->
   <meta name="author" content="Revístete">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
   <meta name="googlebot" content="index, follow">
-  <link rel="canonical" href="https://www.revistete.com">
-  <meta property="og:title" content="Revístete | Transforma la ropa usada en impacto social">
-  <meta property="og:description" content="Dona, vende o compra ropa de segunda mano. Conectamos personas y organizaciones para reducir el desperdicio textil. Sé parte del cambio.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.revistete.com">
-  <meta property="og:image" content="https://www.revistete.com/og-revistete.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Revístete | Dale nueva vida a la ropa">
-  <meta name="twitter:description" content="Plataforma profesional de reutilización textil. Donaciones, venta y compra responsable. Unete a la causa.">
   
+  <!-- Canonical URL (importante para GitHub Pages) -->
+  <link rel="canonical" href="https://revistete.github.io/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://revistete.github.io/">
+  <meta property="og:title" content="Revístete | Moda circular sostenible - Dona y reutiliza ropa">
+  <meta property="og:description" content="Plataforma líder en economía circular textil. Dona, vende o reutiliza ropa. Impacto social real. Únete al cambio sostenible.">
+  <meta property="og:image" content="https://revistete.github.io/og-revistete.jpg">
+  <meta property="og:image:alt" content="Revístete - Moda circular con impacto social">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:site_name" content="Revístete">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Revístete | Moda circular sostenible">
+  <meta name="twitter:description" content="Dona, vende o compra ropa de segunda mano. Conectamos personas para reducir el desperdicio textil.">
+  <meta name="twitter:image" content="https://revistete.github.io/og-revistete.jpg">
+  
+  <!-- Geo y verificación (opcional pero profesional) -->
+  <meta name="geo.region" content="ES">
+  <meta name="language" content="Spanish">
+  
+  <!-- Favicon (estándar, se puede reemplazar después) -->
+  <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👕</text></svg>">
+  
+  <!-- Schema.org markup for Google (datos estructurados) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Revístete",
+    "url": "https://revistete.github.io/",
+    "logo": "https://revistete.github.io/logo.png",
+    "description": "Plataforma de economía circular textil para donar, vender y reutilizar ropa con impacto social.",
+    "sameAs": [
+      "https://www.instagram.com/revistete.app/",
+      "https://twitter.com/revistete"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contacto@revistete.org",
+      "contactType": "customer service",
+      "availableLanguage": "Spanish"
+    }
+  }
+  </script>
+  
+  <!-- Schema.org para WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Revístete",
+    "url": "https://revistete.github.io/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://revistete.github.io/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
   <style>
     * {
       margin: 0;
@@ -91,7 +153,12 @@
       transition: all 0.2s;
     }
 
-    /* ----- HERO (mobile first) ----- */
+    .btn-outline:hover {
+      background: #1C6E48;
+      color: white !important;
+    }
+
+    /* ----- HERO ----- */
     .hero {
       padding: 48px 0 64px;
       display: flex;
@@ -406,7 +473,7 @@
       font-size: 0.85rem;
     }
 
-    /* Media Queries para tablet y desktop */
+    /* Media Queries */
     @media (min-width: 768px) {
       .container {
         padding: 0 40px;
@@ -467,7 +534,6 @@
       }
     }
 
-    /* Ajustes extra móvil muy pequeño */
     @media (max-width: 480px) {
       .navbar {
         flex-direction: column;
@@ -521,7 +587,6 @@
         <h1>Dale nueva vida a la ropa,<br>transforma realidades</h1>
         <p>Revístete conecta personas, empresas y organizaciones para donar, vender y reutilizar prendas. Reduce el desperdicio, viste con propósito y sé parte del cambio sostenible.</p>
         <div class="hero-buttons">
-          <!-- Botón "Quiero ayudar" redirige a Instagram -->
           <a href="https://www.instagram.com/revistete.app/?hl=en" target="_blank" rel="noopener noreferrer" class="btn-primary">Quiero ayudar →</a>
           <button class="btn-secondary" id="heroAppBtn">Conocer la App</button>
         </div>
@@ -575,7 +640,7 @@
     </section>
   </div>
 
-  <!-- Sección Aplicación (subpágina futura) -->
+  <!-- Sección Aplicación -->
   <div class="container" id="aplicacion">
     <div class="app-section">
       <div class="app-flex">
@@ -619,7 +684,7 @@
     </section>
   </div>
 
-  <!-- Contacto final / Escríbenos -->
+  <!-- Contacto final -->
   <div class="container" id="contacto">
     <div class="cta-final">
       <h2>✉️ Únete a la causa Revístete</h2>
@@ -647,7 +712,7 @@
   </div>
 </footer>
 
-<!-- MODAL DE CONTACTO PROFESIONAL (responsive) -->
+<!-- Modal de contacto -->
 <div id="professionalModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(20, 30, 25, 0.9); backdrop-filter: blur(6px); justify-content: center; align-items: center; z-index: 3000; padding: 16px;">
   <div style="background: #FFFFFF; max-width: 500px; width: 100%; border-radius: 40px; padding: 32px 24px; text-align: center; position: relative; box-shadow: 0 30px 50px rgba(0,0,0,0.2);">
     <button id="closeModalProfessional" style="position: absolute; top: 16px; right: 20px; font-size: 28px; background: none; border: none; cursor: pointer; color: #8B9E92;">&times;</button>
@@ -682,7 +747,7 @@
   if (closeModalBtnProf) closeModalBtnProf.addEventListener('click', closeModalFunc);
   window.addEventListener('click', (e) => { if (e.target === modal) closeModalFunc(); });
 
-  // Formulario modal con mensaje de agradecimiento
+  // Formulario modal
   const contactModalForm = document.getElementById('modalFormProfessional');
   if (contactModalForm) {
     contactModalForm.addEventListener('submit', (e) => {
@@ -692,7 +757,7 @@
         <div style="text-align: center; padding: 20px 0;">
           <div style="font-size: 3.2rem;">🌱</div>
           <h3 style="color: #1C6E48; margin: 18px 0;">¡Gracias por escribirnos!</h3>
-          <p>Hemos recibido tu mensaje. Nuestro equipo de impacto se pondrá en contacto contigo para seguir construyendo moda con conciencia.</p>
+          <p>Hemos recibido tu mensaje. Nuestro equipo de impacto se pondrá en contacto contigo.</p>
           <button id="finalModalCloseBtn" style="background: #1C6E48; color: white; padding: 12px 28px; border-radius: 60px; border: none; margin-top: 28px; cursor: pointer;">Cerrar</button>
         </div>
       `;
@@ -701,20 +766,20 @@
     });
   }
 
-  // Redirecciones futuras para subpáginas de App y Colaboradores
+  // Redirecciones futuras
   const appBtnSub = document.getElementById('subpageAppBtn');
   const colabBtnSub = document.getElementById('subpageColabBtn');
   const heroAppBtn = document.getElementById('heroAppBtn');
 
   function goToSubpage(section) {
-    alert(`✨ Sección "${section}" en desarrollo. Próximamente tendremos una página completa con toda la información detallada. ¡Sigue conectado!`);
+    alert(`✨ Sección "${section}" en desarrollo. Próximamente tendremos una página completa. ¡Sigue conectado!`);
   }
 
   if (appBtnSub) appBtnSub.addEventListener('click', () => goToSubpage('Aplicación Revístete'));
   if (colabBtnSub) colabBtnSub.addEventListener('click', () => goToSubpage('Colaboradores y aliados'));
   if (heroAppBtn) heroAppBtn.addEventListener('click', () => goToSubpage('Aplicación móvil'));
 
-  // Scroll suave para enlaces internos del menú
+  // Scroll suave
   document.querySelectorAll('.nav-links a, .footer-links-row a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const hash = this.getAttribute('href');
