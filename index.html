@@ -147,6 +147,13 @@
       cursor: pointer;
       font-size: 0.95rem;
       transition: all 0.2s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #145a3b;
+      transform: translateY(-2px);
     }
 
     .btn-secondary {
@@ -514,7 +521,8 @@
         <h1>Dale nueva vida a la ropa,<br>transforma realidades</h1>
         <p>Revístete conecta personas, empresas y organizaciones para donar, vender y reutilizar prendas. Reduce el desperdicio, viste con propósito y sé parte del cambio sostenible.</p>
         <div class="hero-buttons">
-          <button class="btn-primary" id="heroContactBtn">Quiero ayudar →</button>
+          <!-- Botón "Quiero ayudar" redirige a Instagram -->
+          <a href="https://www.instagram.com/revistete.app/?hl=en" target="_blank" rel="noopener noreferrer" class="btn-primary">Quiero ayudar →</a>
           <button class="btn-secondary" id="heroAppBtn">Conocer la App</button>
         </div>
       </div>
@@ -658,7 +666,7 @@
 <script>
   // Modal contacto
   const modal = document.getElementById('professionalModal');
-  const openModalBtns = document.querySelectorAll('#openModalFinalBtn, #heroContactBtn');
+  const openModalBtns = document.querySelectorAll('#openModalFinalBtn');
   const closeModalBtnProf = document.getElementById('closeModalProfessional');
 
   function openModalFunc() {
@@ -693,7 +701,7 @@
     });
   }
 
-  // Redirecciones futuras para subpáginas de App y Colaboradores (sin alertas intrusivas)
+  // Redirecciones futuras para subpáginas de App y Colaboradores
   const appBtnSub = document.getElementById('subpageAppBtn');
   const colabBtnSub = document.getElementById('subpageColabBtn');
   const heroAppBtn = document.getElementById('heroAppBtn');
