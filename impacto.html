@@ -124,38 +124,5 @@
         <div class="last-update" id="lastUpdate"></div>
     </div>
 
-    <script>
-        // Función para obtener el contador desde el archivo JSON
-        async function getCounter() {
-            try {
-                const response = await fetch('counter_data.json?' + Date.now());
-                if (response.ok) {
-                    const data = await response.json();
-                    return data.counter;
-                } else {
-                    console.error('Error fetching counter');
-                    return 0;
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                return 0;
-            }
-        }
-
-        // Función para actualizar el contador en la página
-        async function updateCounter() {
-            const counter = await getCounter();
-            document.getElementById('counter').textContent = counter;
-            
-            // Actualizar fecha de última actualización
-            const now = new Date();
-            document.getElementById('lastUpdate').textContent = 
-                `Última actualización: ${now.toLocaleString()}`;
-        }
-
-        // Actualizar cada 30 segundos
-        updateCounter();
-        setInterval(updateCounter, 30000);
-    </script>
 </body>
 </html>
