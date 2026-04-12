@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prendas Donadas - RevistaTE</title>
+    <title>Prendas Donadas</title>
     <style>
         * {
             margin: 0;
@@ -12,127 +12,96 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-color: #f5f5f5;
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         .container {
             background: white;
             border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 50px 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             text-align: center;
-            max-width: 600px;
+            max-width: 500px;
             width: 100%;
-            animation: fadeIn 0.5s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
         }
 
         h1 {
             color: #333;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        h1::before {
-            content: "👕";
-            font-size: 1em;
-        }
-
-        h1::after {
-            content: "👖";
-            font-size: 1em;
+            font-size: 2em;
+            margin-bottom: 30px;
+            font-weight: 600;
         }
 
         .counter-box {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #f8f9fa;
             border-radius: 15px;
             padding: 30px;
-            margin: 30px 0;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            margin: 20px 0;
+            border: 1px solid #e9ecef;
         }
 
         .counter-label {
-            color: white;
-            font-size: 1.2em;
+            color: #6c757d;
+            font-size: 1rem;
             margin-bottom: 10px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
 
         .counter-number {
-            color: white;
-            font-size: 5em;
+            color: #28a745;
+            font-size: 4.5em;
             font-weight: bold;
             margin: 10px 0;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
         .counter-unit {
-            color: rgba(255,255,255,0.9);
-            font-size: 1.1em;
+            color: #6c757d;
+            font-size: 1rem;
         }
 
         .message {
-            background: #f0f0f0;
+            background: #f8f9fa;
             border-radius: 10px;
             padding: 20px;
             margin-top: 20px;
+            border: 1px solid #e9ecef;
         }
 
         .message p {
-            color: #666;
-            font-size: 1.1em;
+            color: #495057;
+            font-size: 1rem;
             line-height: 1.5;
         }
 
         .heart {
-            color: #ff6b6b;
-            font-size: 1.2em;
-        }
-
-        .footer {
-            margin-top: 30px;
-            color: #999;
-            font-size: 0.9em;
+            color: #dc3545;
+            font-size: 1.2rem;
         }
 
         .last-update {
-            font-size: 0.8em;
-            color: #aaa;
-            margin-top: 10px;
+            font-size: 0.75rem;
+            color: #adb5bd;
+            margin-top: 20px;
         }
 
         @media (max-width: 480px) {
             .container {
-                padding: 20px;
+                padding: 30px 20px;
             }
             
             h1 {
-                font-size: 1.8em;
+                font-size: 1.5rem;
             }
             
             .counter-number {
-                font-size: 3.5em;
+                font-size: 3rem;
             }
         }
     </style>
@@ -143,7 +112,7 @@
         
         <div class="counter-box">
             <div class="counter-label">¡Gracias por tu generosidad!</div>
-            <div class="counter-number" id="counter">0</div>
+            <div class="counter-number" id="counter">14</div>
             <div class="counter-unit">Prendas Donadas</div>
         </div>
 
@@ -152,10 +121,7 @@
             <p class="heart">❤️ ¡Sigue así! ❤️</p>
         </div>
 
-        <div class="footer">
-            <p>RevistaTE - Donaciones que cambian vidas</p>
-            <div class="last-update" id="lastUpdate"></div>
-        </div>
+        <div class="last-update" id="lastUpdate"></div>
     </div>
 
     <script>
